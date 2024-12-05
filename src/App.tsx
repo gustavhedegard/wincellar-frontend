@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import WineScreen from './features/wineScreen';
+import WineScreen from './features/wine/wineScreen';
+import { Counter } from './features/counter/counter';
 
 function App() {
   return (
     <div className="App">
-      <WineScreen></WineScreen>
+      <WineScreen/>
+      <Counter/>
     </div>
   );
 }

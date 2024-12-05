@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
-import {getAllWines} from "../api/api-calls/wineApiCalls";
-import {Wines} from "../api/api-models/wine";
+import {getAllWines} from "../../api/api-calls/wineApiCalls";
+import {Wines} from "../../api/api-interfaces/wine";
 
 export default function WineScreen() {
     const [wines, setWines] = useState<Wines>();
