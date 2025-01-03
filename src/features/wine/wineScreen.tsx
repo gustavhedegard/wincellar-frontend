@@ -3,17 +3,10 @@ import { getAllWines } from "../../api/api-calls/wineApiCalls";
 import { Wines } from "../../api/api-interfaces/wine";
 
 export default function WineScreen() {
-  const [wines, setWines] = useState<Wines>();
-
   useEffect(() => {
-    const fetchData = async () => {
-      // const wines = await getAllWines();
-      // setWines(wines);
-    };
+    const fetchData = async () => {};
     fetchData().catch(console.error);
   }, []);
-
-  console.log(wines);
 
   return (
     <>

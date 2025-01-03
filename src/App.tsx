@@ -1,14 +1,9 @@
-import './App.css';
-import WineScreen from './features/wine/wineScreen';
-import { Counter } from './features/counter/counter';
+import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
+import { FC } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <WineScreen/>
-      <Counter/>
-    </div>
-  );
-}
+export const App: FC = () => {
+  return <AppRoutes />;
+};
 
 export default App;

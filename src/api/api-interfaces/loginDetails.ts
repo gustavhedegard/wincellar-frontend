@@ -1,4 +1,4 @@
 export interface LoginDetails {
-  loginInfo: string;
+  loginInput: string;
   password: string;
 }

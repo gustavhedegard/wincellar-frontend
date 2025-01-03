@@ -27,9 +27,11 @@ export const fetchHttpWithoutAuth = async <TResponse, TPayload>(
   reqBody: TPayload
 ): Promise<TResponse> => {
   try {
+    var a = createHeaders();
+    console.log(reqBody);
     const response = await axios(`${apiUrl}/${url}`, {
       method: "POST",
-      headers: createHeaders(),
+      headers: { "content-type": "application/json" },
       data: {
         ...(reqBody && reqBody),
       },
